@@ -1164,6 +1164,7 @@ form::before{
     margin: 0;
     color: black;
     font-size: 30px;
+    font-family: "Sofia", sans-serif;
 }
 
 .KidsPage button  {
@@ -1296,6 +1297,7 @@ form::before{
     .KidsPage h5,
     .KidsPage p {
       font-size: 16px; /*  font size for smaller screens */
+      font-family:"Sofia", sans-serif; 
     }
   
     .KidsPage button {
