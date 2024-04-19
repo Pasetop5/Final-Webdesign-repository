@@ -3,6 +3,7 @@
 // for all elements with the class "more-info-btn" (all "Purchase" buttons)
 const purchaseButtons = document.querySelectorAll('.more-info-btn');
 
+
 // Function to handle purchase button click
 function purchaseHandler() {
     alert("Orders coming soon, please click on more info to fill the form and be on the waiting list");
