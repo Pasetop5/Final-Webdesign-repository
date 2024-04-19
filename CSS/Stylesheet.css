@@ -78,6 +78,11 @@ button.clear{
     width: 60px;
     height: 60px;
 }
+
+#logothird{
+    width: 60px;
+    height: 60px;
+}
 /*Aligning links and logocontained in the header section.Adding background and shadow*/
 #header{
     display: flex;
