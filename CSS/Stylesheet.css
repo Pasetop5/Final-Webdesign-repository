@@ -1,0 +1,1444 @@
+/*Work by Sylvia - 22241418*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 30px 0;
+}*/
+body{
+    width: 100%;
+}
+
+button.basic{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 24px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+button.clear{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: white;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.3s;
+}
+/*Header Stlying*/
+/*resizing logo image*/
+#logo{
+    width: 60px;
+    height: 60px;
+}
+/*Aligning links and logocontained in the header section.Adding background and shadow*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color:black;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#offcanvasWithBothOptions{
+    background-color: black;
+    width: 18%;
+    font-size: 14px;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.6);
+    color: white;
+    align-items: center;
+}
+/*Alining the list in a row*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   
+}
+/*Removing list structure*/
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+/*Removing underlines from links and adding transition */
+.navbar li a{
+    text-decoration:none ;
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.3 ease;
+}
+/*Adding hovering effect to the navigation links and highlight the current page while on it*/
+.navbar li a:hover{
+    color: chocolate;
+}
+
+/*Adding underline effect when there is hovering*/
+
+.navbar li a:hover::after{
+    content: "";
+    width: 28%;
+    height: 3px;
+    background:chocolate;
+    position: absolute;
+    bottom: -3px;
+    left: 30px;
+}
+
+/*Making the outdent tag not visible on normal screen size*/
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+/*Removing visibility of the close icon to only appear in rwd*/
+#close{
+    display: none;
+}
+/*Home Page Styling*/
+/*Adding a back ground image and centering the homepage intro section*/
+.homecontent{
+ padding-top: 60px;
+   background-image: url('../Pictures/homepageback-min.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/*Spacing out the h4 from the other heading tags*/
+.homecontent h4{
+    padding-bottom: 15px;
+}
+/*Styling the h1 tag*/
+.homecontent h1{
+    color:lightslategrey;
+    padding-right: 50px;
+    font-weight: 800;
+}
+/*Button styling*/
+.homecontent button{
+    background-image: url('../Pictures/texture-1504364_640-min.jpg');
+    background-color: transparent;
+    color:darkslategrey;
+    border:0;
+    padding-top: 10px 80px 10px 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+/*Styling services information cards*/
+/*Resizing individual images for use in the cards*/
+.featurescont img{
+    width:245px;
+    height:200px ;
+}
+/*Making the images in the card responsive*/
+#homefeatures .featurescont img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Displaying the items in the section side by side*/
+#homefeatures{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#homefeatures .featurescont{
+    width: 20%;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    border: 2px solid #222;
+    margin-right: 2%;
+}
+
+/*Adding hover effect on the cards*/
+#homefeatures .featurescont:hover{
+    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+}
+/*Adding a border and color to the service name*/
+ .featurescont h6{
+    display: inline-block;
+    padding: 8px 6px 4px 2px;
+    line-height: 1;
+    border-radius: 5px;
+    color: grey;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
+
+/*Aligning heading text to the center*/
+#homeproduct{
+    text-align: center;
+}
+
+#homeproduct .hpcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+
+}
+/*Fitting image to the container and making it responsive*/
+.hpDetail img{
+    width: 230px;
+    height: 235px;
+}
+#homeproduct .hpDetail img{
+    width: 100%;
+    border-radius:  8px; 
+}
+/*Product cards styling*/
+#homeproduct .hpDetail{
+    width: 23%;
+    min-width: 250px;
+    padding: 8px 10px;
+    border: 1px solid grey;
+    border-radius:  14px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0.6, 0.6 ,0.6, 0.6);
+    margin: 12px 0;
+    transition: 0.02s ease;
+}
+/*Adding hovering effect on the cards*/
+#homeproduct .hpDetail:hover{
+    box-shadow:1px 1px 1px rgba(106, 97, 102, 0.06);
+}
+/*Aligning card text to the center*/
+.hpdes{
+    text-align: center;
+    padding:5px 0;
+}
+
+/*Styling span and heading tags in the cards*/
+ .hpdes span{
+    color: darkslategrey;
+    font-weight: 600;
+    font-size: 11px;
+}
+.hpdes h5{
+    padding-top: 6px;
+    color:dimgray;
+    font-size: 16px;
+    font-weight: 800;
+}
+.hpdes h4{
+    padding-top:6px ;
+    font-size:18px ;
+    color: #222;
+    font-weight: 600;
+}
+/*Adding background image to the section*/
+#cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../Pictures/black-5273871_1280-min.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+} 
+
+#cta h4{
+    color: cornsilk;
+    font-size: 20px;
+    font-weight: 600;
+}
+#cta h2{
+    color: cornsilk;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+#cta h2 span{
+    color: chocolate;
+}
+/*Adding hover to the button*/
+#cta button{
+    background: chocolate;
+}
+#cta button:hover{
+    background: chocolate;
+    color: black;
+}
+
+/*Styling info boxes*/
+#cta2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cta2 .infobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('../Pictures/balancing-1868051_1280-min.jpg');
+    width: 48%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+/*Changing background image for 2nd card*/
+#cta2 .infobox2{
+    background-image: url('../Pictures/man-6251691_640-min.jpg');  
+}
+.infobox h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.infobox h2{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+.infobox span{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+/*Adding hover effect to the card*/
+.infobox:hover button{
+    background: black;
+    border: 1px solid chocolate;
+}
+
+/*Styling different collection cards*/
+#cta3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('../Pictures/pexels-monstera-production-7139183-min\ \(1\).jpg');
+        width: 32%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
+    
+ .banner{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+#cta3 .banner2{
+    background-image: url('../Pictures/Menhomepage\ 2.jpg');
+}
+#cta3 .banner3{
+    background-image: url('../Pictures/woman20-min.jpg');
+}
+
+.banner h2,.banner h3{
+    color: white;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Styling newsletter area section*/
+/*Adding background image to the area*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('../Pictures/black-5273871_1280-min.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: chocolate;
+    padding-left: 2%;
+    padding-right: 15%;
+    margin-top:1%;
+    margin-bottom: 1%;
+
+} 
+#newsletter h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+} 
+
+#newsletter p{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+} 
+
+#newsletter p span{
+
+    color: black;
+} 
+/*Sizing and outlining the email input area*/
+#newsletter input{
+    height: 40px;
+    padding: 0px 3px;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid transparent ;
+    border-radius: 3px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*Aligning button and input area in a row*/
+.homeform{
+    display: flex;
+    width: 40%;
+}
+.homeform button{
+    background-color: chocolate;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*Styling Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .p1{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    margin-bottom: 15px;
+    width: 25%;
+}
+footer #logo{
+    margin-bottom: 15px;
+}
+footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+
+}
+
+footer p{
+    font-size: 12px;
+    padding-bottom: 15px;
+    margin:0 0 6px 0 ;   
+}
+
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+
+}
+.footrow img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+footer .socials{
+    color: darkslategrey;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+footer .socials i:hover {
+    color: #222;
+}
+footer a:hover{
+    color: chocolate;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*Contact us Page styling*/
+#contpage{
+    background: linear-gradient(90deg,#e19d3e 10%,#e19d3e 10%,#dcdcdc 30%,#dcdcdc 100%);
+    
+}
+
+.title h2 , .contact h3{
+    text-align: center;
+}
+form{
+    position: relative;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto 80px auto;
+    padding:20px;
+    box-shadow: 1px 1px 1px rgba(10, 10, 9, 0.06);
+}
+span{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 45px;
+}
+form::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Pictures/bicycle-3045580_1280-min.jpg');
+    opacity: 0.4;
+    z-index: -1;
+
+}
+
+
+/*RWD*/
+@media (max-width:799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+    .navbar1{
+        display: none;
+    }
+    .navbar2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100vh;
+        width: -300px;
+        background-color: #222;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    .navbar.active{
+        right: 0px;
+    }
+    .navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile{
+        color: chocolate;
+        font-size: 24px;
+        padding-left: 20px;
+
+    }
+    #close{
+        display: initial;
+       position: absolute; 
+       top: 30px;
+       left: 30px;
+       color: white;
+       font-size: 24px;
+
+    }
+
+    .homecontent{
+    height: 70vh;
+    padding: 0 60px;
+    background-position:top 30% right 30% ;
+    }
+
+    #homefeatures{
+    justify-content: center;
+    
+    }
+
+    #homefeatures .featurescont{
+        margin: 15px 15px;
+    }
+
+    #homeproduct .hpcontainer{
+        justify-content: center;
+       
+    }
+
+    #homeproduct .hpDetail{
+        margin: 15px; 
+    }
+
+    #cta{
+       height: 125px; 
+    }
+    #cta2 .infobox{
+        min-width: 100%;
+        height: 150px;
+    }
+
+    #cta3{
+        padding: 0 40px
+    }
+    #cta3 .banner{
+        width:27% ;
+    }
+
+    .homeform{
+        width: 70%;
+    }
+
+}
+
+@media(max-width:477px){
+    .section-p1{
+        padding :20px;
+        }
+    #navbar1{
+        display: none;
+    }
+        #header{ 
+    padding: 5px 30px;
+    }
+
+    h1{
+       font: size 36px; ; 
+    }
+    h2{
+       font-size: 30px; 
+    }
+    .homecontent{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #homefeatures{
+        justify-content: space-between;
+    }
+    #homefeatures .featurescont{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #homeproduct .hpDetail{
+        width: 100%;
+    }
+
+    #cta{
+        height: 200px; 
+     }
+
+    #cta2 .infobox{
+        height: 350px ;
+    }
+    #cta2 .infobox2{
+        margin-top: 20px;
+    }
+    #cta3{
+        padding: 0 20px;
+    }
+
+    #cta3  .banner{
+        width: 100%;
+    } 
+    #newsletter{
+        padding: 40px 20px;
+    }
+    .homeform{
+        width: 100%;
+    }
+    .copyright{
+        text-align: start;
+    }
+   
+}
+
+
+
+
+/*Work by Tope*/
+
+/*Men's Page Styling /
+/*Adding a back ground image and centering the homepage intro section*/
+
+.Mencontent {
+    padding-top: 60px;
+    background-image: url('../Pictures/Homepagemen-min.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    background-color: rgba(255, 255, 255, 0.365);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.Mencontent h2,
+.Mencontent h3,
+.Mencontent h4,
+.Mencontent h5,
+.Mencontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+
+.Mencontent button {
+    background-color: chocolate;
+    border: none;
+    color: rgb(255, 253, 253);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+
+
+
+.Mencollections h5 {
+    text-align: center;
+    font-size: 90px;
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #c9690e;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 14%; 
+    margin: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color: #0c0c0c;
+}
+
+.product img {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    color: white;
+}
+
+.product h3,
+.product h4{
+    margin: 5px 0;
+}
+
+.product-stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.product-info :hover {
+    background-color:  rgb(72, 70, 70); /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transform: scale(1.03); /* Scale up slightly on hover */
+    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+}
+
+.product:hover {
+    background-color: rgb(72, 70, 70); /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03); /* Scale up slightly on hover */
+}
+
+.product-info:hover h4 {
+    color: white; /* Change text color of h4 on hover */
+    
+}
+
+
+.product:hover .price {
+    color: white; /* Change discount sale text color to white on hover */
+}
+.product-info .price {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.product:hover .cart-icon {
+    color: white; /* Change icon color to white once it is selected hover */
+}
+
+
+#product1-info{
+    color: white;
+}
+
+
+/*styling for  hover texts*/
+#product1-info:hover{
+    color: white;
+    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03); /* Scale up  on hover */
+}
+
+
+
+/* Style for the quantity controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the minus and plus buttons */
+.quantity-controls button {
+
+    padding: 2px 5px; /* to adjust padding to control button size */
+    margin: 0 5px; /* Add margin to separate buttons */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* for radius for rounded corners */
+    background-color: transparent; /* to make background transparent */
+    cursor: pointer; 
+
+}
+
+/* Style for the purchase button  and more info button */
+.add-to-cart-btn,
+.more-info-btn {
+    padding: 2px 5px; /* for adjusting the padding padding to control button size */
+    margin-top: 5px; /* Add margin to separate buttons from other content */
+    border: 1px solid #ceaf23; /* Add a border with  an put color on it*/
+    border-radius: 4px; /* Add border radius for a litle rectangle that has circular edges */
+    background-color: #ae911d; /* Set background color*/
+    color: #fff; /* Set text color to white */
+    cursor: pointer; 
+   
+}
+
+/* hover effect for purchase and info button */
+.add-to-cart-btn:hover,
+.more-info-btn:hover {
+    background-color: #0056b3; /* to put a color on hover */
+    border-color: #0056b3; /* to put blue color color on hover */
+}
+
+#product1-info{
+
+    color: #0c0c0c;
+}
+
+#product1-info :hover{
+    color: white
+
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .Mencontent {
+      padding-top: 10%; /*  padding for smaller screens */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .text-content {
+      padding: 10px; /* padding for smaller screens */
+      margin-bottom: 10px; /* margin for smaller screens */
+    }
+  
+    .Mencontent h2,
+    .Mencontent h3,
+    .Mencontent h4,
+    .Mencontent h5,
+    .Mencontent p {
+      font-size: 16px; /*  font size for smaller screens */
+    }
+  
+    .Mencontent button {
+      padding: 10px 20px; /*  padding for smaller screens */
+      font-size: 14px; /*  font size for smaller screens */
+      margin: 2px 1px; /* margin for smaller screens */
+    }
+  }
+
+/* For screens that are  than 768px (phones) */
+
+
+@media (max-width: 767px) {
+    .Mencollections h5 {
+      font-size: 48px;
+    }
+  
+    .product {
+      width: 45%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens between 768px and 1023px (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .Mencollections h5 {
+      font-size: 64px;
+    }
+  
+    .product {
+      width: 30%;
+      margin: 0 5px 10px 5px;
+    }
+  }
+  
+  /* For screens 1024px and larger (desktops) */
+  @media (min-width: 1024px) {
+    .Mencollections h5 {
+      font-size: 90px;
+    }
+  
+    .product {
+      width: 20%;
+      margin: 0 10px 10px 10px;
+    }
+  }
+
+/*styling for native*/
+
+.Nativecontent {
+    padding-top: 60px;
+    background-image: url('../Pictures/Native_and_sun-min.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+
+
+/*styling for native page */
+
+.Nativecollection h5 {
+
+    text-align: center;
+    font-size: 90px;
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.Nativecontent h2,
+.Nativecontent h3,
+.Nativecontent h4,
+.Nativecontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+
+.Nativecontent button {
+    background-color: #d28315;
+    border: none;
+    color: rgb(255, 253, 253);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+
+/* Correcting Font Sizes in Existing CSS */
+.Nativecollection h5 {
+    text-align: center;
+    font-size: 36px; /* Adjusted for better scaling on all devices */
+    padding-top: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Nativecontent h3,
+.Nativecontent h4,
+.Nativecontent h5,
+.Nativecontent p {
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 25px; /* Corrected from '25x' to '25px' */
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .Nativecontent {
+        padding-top: 30px; /* Less padding on top for smaller screens */
+        height: auto; /* Height becomes auto to avoid cutting off content */
+        padding: 10px; /* padding around the content */
+    }
+
+    .text-content {
+        padding: 10px; /* Smaller padding in text content for smaller screens */
+        margin-bottom: 10px; /* Smaller margin below the text content */
+    }
+
+    .Nativecontent h2,
+    .Nativecontent h3,
+    .Nativecontent h4,
+    .Nativecontent p {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .Nativecontent button {
+        padding: 10px 20px; /* reduced padding */
+        font-size: 14px; /* smaller font sizes */
+        margin: 4px 2px; /* reducing the margin */
+    }
+}
+
+/*styling for the game */
+
+#gamecontainer {
+    text-align: center;
+}
+
+#gamelayer {
+    border: 6px solid;
+    border-color: #0056b3;
+}
+
+#scoretext {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+#resetbutton {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    border: 5px solid;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: lightskyblue;
+}
+
+/*Work by Chris*/
+.KidsPage{
+    padding-top: 60px; /*Padding to the top to be 60*/
+    background-image: url('../Pictures/Homepagekids.jpg'); /* to set the background image*/
+    height: 90vh;/*height of the image*/
+    width: 100%; /* width of the image*/
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 12px 12px 2px 1px rgba;
+}
+
+
+.text-content {
+    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: add rounded corners */
+    margin-bottom: 20px; /* Optional: add margin to separate from button */
+}
+
+/*styling for the class men content*/
+.KidsPage h3,
+.KidsPage h4,
+.KidsPage h5,
+.KidsPage p{
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+
+.KidsPage button  {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Brush Script MT (cursive);
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+
+.KidsWear {
+    text-align: center;
+    font-size: 110px;
+    padding-top: 30px;
+}
+
+.Kids-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Kids {
+    background-color: #f4f4f4;
+    border: 1px solid #0e65c9;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(173, 216, 230, 0.4) 5px 5px, rgba(173, 216, 230, 0.3) 10px 10px, rgba(173, 216, 230, 0.2) 15px 15px, rgba(173, 216, 230, 0.1) 20px 20px, rgba(173, 216, 230, 0.05) 25px 25px;
+    width: 15%; 
+    margin: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color:  lightblue;
+}
+
+.Kids img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.Kids h3,
+.Kids h4{
+    margin: 5px 0;
+}
+
+.Kids-stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.Kids-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.Kids-info :hover {
+    background-color: black; /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transform: scale(1.03); /* Scale up slightly on hover */
+    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+}
+
+.Kids:hover {
+    background-color: black; /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03); /* Scale up slightly on hover */
+}
+
+.Kids-info:hover h4 {
+    color: white; /* Change text color of h4 on hover */
+}
+
+
+.Kids:hover .price {
+    color: white; /* Change discount sale text color to white on hover */
+}
+.Kids-info .price {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.Kids:hover .cart-icon {
+    color: white; /* Change icon color to white once it is selected hover */
+}
+
+/*women page*/
+
+.WomenPage{
+    padding-top: 60px; /*Padding to the top to be 60*/
+    background-image: url('../Pictures/Homepagewomen.jpg'); /* to set the background image*/
+    height: 90vh;/*height of the image*/
+    width: 100%; /* width of the image*/
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*to add box shadow*/
+}
+
+
+.text-content {
+    background-color: rgba(255, 255, 255, 0.365); /* Add white background color for text content */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: add rounded corners */
+    margin-bottom: 20px; /* Optional: add margin to separate from button */
+}
+
+/*styling for the class men content*/
+.WomenPage h3,
+.WomenPage h4,
+.WomenPage h5,
+.WomenPage p{
+    margin-right: 20px;
+    margin: 0;
+    color: black;
+    font-size: 30px;
+}
+    .WomenPage button  {
+      align-items: center;
+      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      line-height: 1em;
+      max-width: 100%;
+      min-width: 140px;
+      padding: 19px 24px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    
+    .button-63:active,
+    .button-63:hover {
+      outline: 0;
+    }
+    
+    @media (min-width: 768px) {
+      .button-63 {
+        font-size: 24px;
+        min-width: 196px;
+      }
+    }
+
+.WomenDress {
+    text-align: center;
+    font-size: 110px;
+    padding-top: 30px;
+    font-family: Courier, monospace;
+}
+
+.Women-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Women {
+    background-color: #f4f4f4;
+    border: 1px solid #0e65c9;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(173, 216, 230, 0.4) 5px 5px, rgba(173, 216, 230, 0.3) 10px 10px, rgba(173, 216, 230, 0.2) 15px 15px, rgba(173, 216, 230, 0.1) 20px 20px, rgba(173, 216, 230, 0.05) 25px 25px;
+    width: 15%; 
+    margin: 0 10px 10px 10px;
+    box-sizing: border-box;
+    color: lightblue;
+}
+
+.Women img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.Women h3,
+.Women h4{
+    margin: 5px 0;
+}
+
+.Women-stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.Women-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+
+.Women-info :hover {
+    background-color: lightblue; /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transform: scale(1.03); /* Scale up slightly on hover */
+    transition: background-color  ease; /*  transition using the background color and setting the ease speed */
+}
+
+.Women:hover {
+    background-color: #0000007c; /*  background color on hover to turn to black*/
+    color: white; /* text color on hover to turn to black */
+    transition: background-color 0.3s ease; /*  transition using the background color and setting the ease speed */
+    transform: scale(1.03); /* Scale up slightly on hover */
+}
+
+.Women-info:hover h4 {
+    color: white; /* Change text color of h4 on hover */
+}
+
+
+.Women:hover .price {
+    color: white; /* Change discount sale text color to white on hover */
+}
+.Women-info .price {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.Women:hover .cart-icon {
+    color: white; /* Change icon color to white once it is selected hover */
+}
