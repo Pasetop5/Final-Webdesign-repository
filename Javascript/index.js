@@ -285,3 +285,16 @@ const validateInputs = () => {
         setSuccess(terms);
     }
 }
+
+form.addEventListener('submit', e => {
+    e.preventDefault();  // Prevent the default form submission
+    validateInputs();    // Call your validation function
+
+    // Check if the form is valid
+    if (form.checkValidity()) {
+        // Optionally, you could use a short delay or transition here
+        setTimeout(() => {
+            window.location.href = '../Game/game.html';  // Redirect to your game
+        }, 1000);  // Redirect after 1 second
+    }
+});
