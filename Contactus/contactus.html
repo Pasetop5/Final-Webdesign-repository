@@ -59,13 +59,103 @@
 				</div>
 			  </div>
 		</section>
-
-		<div class="contactus">
+		<div class="contactus"></div>
+			<div class="title">
+				<h2>Get in Touch</h2>
+			</div>
+			<div class="contact">
+				<h3>WE ARE HERE FOR YOU</h3>
+			
+				<form id="form">
+					<div class="formbox">
+						<div class="row1">
+							<div class="chatbox">
+								<span>First Name *</span>
+								<input id="firstname" type="text" placeholder="Enter First Name" minlength="3" required>
+								<div class="error"></div>
+							</div>
+			
+			
+							<div class="chatbox">
+								<span>Last Name *</span>
+								<input id="lastname" type="text" placeholder="Enter Last Name" minlength="3" required>
+								<div class="error"></div>
+							</div>
+			
+							<div class="chatbox">
+								<span>Phone Number *</span>
+								<input id="phone" type="tel" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}[0-9]{3}" required>
+								<div class="error"></div>
+							</div>
+			
+							<div class="chatbox">
+								<span>Email Address *</span>
+								<input id="email" type="email" placeholder="Enter Email Address" required>
+								<div class="error"></div>
+							</div>
+			
+							<div class="chatbox">
+								<span>Which is your preferred method of contact?</span><br>
+								<label>Call</label>
+								<input id="call" type="radio" name="contactMethod">
+								<label>Text</label>
+								<input id="phonetext" type="radio" name="contactMethod">
+								<label>Email</label>
+								<input id="oemail" type="radio" name="contactMethod">
+								<div class="error"></div>
+							</div>
+			
+							<div class="chatbox">
+								<span>I need a consult on... *</span><br>
+								<select id="consultSelect" required>
+									<option value="">Select an option</option>
+									<option value="Product Information">Product Information</option>
+									<option value="Order Status">Order Status</option>
+									<option value="My Account">My Account</option>
+									<option value="Return of purchased items">Return of purchased items</option>
+									<option value="Other">Other (Please specify in message box provided.)</option>
+								</select>
+								<div class="error"></div>
+							</div>
+						</div>
+			
+						<div class="row2">
+							<div class="chatbox">
+								<span>Additional Comments</span><br>
+								<textarea id="comments" rows="5" col="10" placeholder="Enter your message details here"></textarea>
+								<div class="error"></div>
+							</div>
+						</div>
+			
+						<div class="row1">
+							<div class="chatbox">
+								<span>I agree to the terms and conditions</span>
+								<input id="terms" type="checkbox" required>
+								<div class="error"></div>
+							</div>
+			
+							<div class="chatbox">
+								<span>I want to receive monthly updates on products and services</span>
+								<input id="promotion" type="checkbox">
+								<div class="error"></div>
+							</div>
+						</div>
+						<div class="row2">
+							<div class="chatbox">
+								<input id="submit" type="submit" value="Contact Us">
+							</div>
+						</div>
+					</div>
+			  </form>
+			</div>
+		</div>
+		
+		<!--div class="contactus">
 			<div class="title">
 			<h2>Get in Touch</h2>
 			</div>
 
-				<!--Contact Form-->
+				<--Contact Form>
 				<div class="contact">
 					<h3>WE ARE HERE FOR YOU </h3>
 
@@ -141,7 +231,7 @@
 									
 					</form>
 				</div>
-		</div>
+		</div-->
 
 		<section id="newsletter">
 			<div class="newstext">
