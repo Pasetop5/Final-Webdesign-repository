@@ -65,7 +65,11 @@ productImages.forEach(image => {
 
 
 /*Javascript for Contact form by Sylvia*/
+/*An alert box linked to the sign in button at the footer*/
+function showMessage() {
+    alert("This feature is currently unavailable");
 
+}
 
 // Get references to form elements
 const form = document.getElementById('form');
@@ -167,4 +171,6 @@ const validateInputs = () => {
     } else {
         setSuccess(terms.parentElement);
     }
+    alert("Thank you for your engagement!Your details have been successfully received!");
+    return true;
 };
