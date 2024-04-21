@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../CSS/Stylesheet.css" rel="stylesheet"><!-- Link to Stylesheet -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../CSS/Stylesheet.css" rel="stylesheet"><!-- Link to Stylesheet -->
 	<script src="../Javascript/store.js" defer></script> <!-- link to javascript-->
 	<script src="https://kit.fontawesome.com/99c191925e.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google Fonts preconnect -->
-    <!-- Bootstrap -->
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	 <title>Kuvira-Kids</title>
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google Fonts preconnect -->
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Kuvira-Kids</title>
 </head>
+
 <body>
 	<!--the header for section-->
 	<section id="header">
 		<a href="../index.html"><img id="logoimage" src="../Pictures/kuviralogo.png" alt="Logo top"></a> <!-- Inserting the logo-->
-	  <!-- Inserting the logo-->
-					<div><!-- the navigation for menu -->
-						<ul class="navbar " id="navbar1">
-							<li><a href="../index.html">Home</a></li>
-							<li><a href="../pages/Men.html">Men</a></li>
-							<li><a href="../pages/Women.html">Women</a></li>
-							<li><a href="../pages/children.html">Kids</a></li>
-							<li><a href="../pages/Native.html">Native</a></li>
-							<li><a href="../pages/contactus.html">Contact</a></li>
-		
-						</ul>
-					</div>
 
-					<div id="mobile"><!-- the navigation for the mobile  menu -->
-						<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i  id="bar" class="fa fa-outdent"></i></button>	
+		<div><!-- the navigation for menu -->
+			<ul class="navbar " id="navbar1">
+				<li><a href="../index.html">Home</a></li><!--A link to the home page-->
+				<li><a href="../pages/Men.html">Men</a></li><!--A link to the men page-->
+				<li><a href="../pages/Women.html">Women</a></li><!--A link to the Women page-->
+				<li><a href="../pages/Kids.html">Kids</a></li><!--A link to the Kids page-->
+				<li><a href="../pages/Native.html">Native</a></li><!--A link to the Native page-->
+				<li><a href="../pages/contactus.html">Contact</a></li><!--A link to the Contactus page-->
 
-					<div class=" offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"  id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-						<div class="offcanvas-header">
-						  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">KUVIRA FASHION LINE</h5>
-						  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						  
-						</div>
-						<div class="offcanvas-body">
-							<!-- the logo for the mobile view -->
-							<a href="../index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a><!-- Inserting the logo-->
-							<ul class=" navbar navbar2">
-								<li><a href="../index.html">Home</a></li>
-								<li><a href="../pages/Men.html">Men</a></li>
-								<li><a href="../pages/Women.html">Women</a></li>
-								<li><a href="../pages/children.html">Kids</a></li>
-								<li><a href="../pages/Native.html">Native</a></li>
-								<li><a href="../pages/contactus.html">Contact</a></li>
-			
-							</ul>
-						</div>
-						</div>
-					  </div>
-				</section>
+			</ul>
+		</div>
+
+		<div id="mobile"><!-- the navigation for the mobile  menu -->
+			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i id="bar"
+					class="fa fa-outdent"></i></button>
+
+			<div class=" offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+				aria-labelledby="offcanvasWithBothOptionsLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">KUVIRA FASHION LINE</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+				</div>
+				<div class="offcanvas-body">
+					<!-- the logo for the mobile view -->
+					<a href="../index.html"><img id="logo" src="../Pictures/logo.png"
+							alt="Logo"></a><!-- Inserting the logo-->
+
+					<ul class=" navbar navbar2"><!-- the navigation menu for the mobile view -->
+						<li><a href="../index.html">Home</a></li><!--A link to the home page-->
+						<li><a href="../pages/Men.html">Men</a></li><!--A link to the men page-->
+						<li><a href="../pages/Women.html">Women</a></li><!--A link to the Women page-->
+						<li><a href="../pages/Kids.html">Kids</a></li><!--A link to the Kids page-->
+						<li><a href="../pages/Native.html">Native</a></li><!--A link to the Native page-->
+						<li><a href="../pages/contactus.html">Contact</a></li><!--A link to the Contactus page-->
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<br>
-    <!-- this section for Kids's page -->
+	<!-- this section for Kids's page -->
 	<section class="KidsPage">
 		<div class="text-content">
 			<h3>Great Shopping Experience for Kids</h3>
@@ -75,8 +84,8 @@
 	</div>
 	<br>
 	<section class="Kids-container">
-		<!--First image of a Boy, the name, description, price, and buttons-->
-		<div class="Kids">
+		
+		<div class="Kids"><!--First image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy1-min.jpg" alt="long sleeves Shirt" class="item-img">
 			<div class="Kids-info">
 				<h3>long slvees</h3>
@@ -89,19 +98,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>  
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			        <button class="information" type="button" > Purchase</button>
-					<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
 
-		<div class="Kids"><!--Second image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Second image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl1-min2.jpg" alt="Jacket" class="item-img">
 			<div class="Kids-info">
 				<h3>Jacket</h3>
@@ -114,24 +125,26 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
-				  </div>
-			
-			<button class="information" type="button" > Purchase</button>
-			<button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
-	</div>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
 
-		<div class="Kids"> <!--Third image of a Boy, the name, description, price, and buttons-->
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+		<div class="Kids"> <!--Third image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy2-min.jpg" alt="Shirt" class="item-img">
 			<div class="Kids-info">
 				<h3>White shirt</h3>
-				<h4>White short sleeve  shirt</h4>
+				<h4>White short sleeve shirt</h4>
 				<div class="Kids-stars">
 					<!-- This is a star icon-->
 					<i class="fas fa-star"></i>
@@ -140,19 +153,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
 
-		<div class="Kids"> <!--Fourth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"> <!--Fourth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl2-min2.jpg" alt="sweatshirt" class="item-img">
 			<div class="Kids-info">
 				<h3>Sweat shirt</h3>
@@ -165,19 +180,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
 
-		<div class="Kids"><!--Fifth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"><!--Fifth image of a Boy, the name, description  and buttons-->
 			<img src="../Pictures/boy3-min.jpg" alt="Pattern shirt" class="item-img">
 			<div class="Kids-info">
 				<h3>Pattern shirt</h3>
@@ -190,19 +207,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
 
-		<div class="Kids"><!--Sixth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Sixth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl3-min2.jpg" alt="Dress" class="item-img">
 			<div class="Kids-info">
 				<h3>Dress</h3>
@@ -215,19 +234,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-			     <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
 
-		<div class="Kids"> <!--Seventh image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"> <!--Seventh image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy4-min.jpg" alt="Black leather" class="item-img">
 			<div class="Kids-info">
 				<h3>Jacket</h3>
@@ -240,18 +261,19 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div>
-		         
 
 		<div class="Kids"><!--Eighth image of a Girl, the name, description, price, and buttons-->
 			<img src="../Pictures/Girl4-min.jpg" alt="Gown" class="item-img">
@@ -266,20 +288,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-			     <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-
 		</div>
-	</div>
 
-		<div class="Kids"><!--Ninth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"><!--Ninth image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy6-min.jpg" alt="long sleeve" class="item-img">
 			<div class="Kids-info">
 				<h3>Long Sleeve</h3>
@@ -292,19 +315,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			      <button class="information" type="button" > Purchase</button>
-			      <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Tenth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Tenth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl7-min.jpg" alt="Sweatshirt" class="item-img">
 			<div class="Kids-info">
 				<h3>Sweatshirt</h3>
@@ -317,17 +342,19 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-			     <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
 		</div>
-	</div> 
 
 		<div class="Kids"><!--Eleventh image of a Boy, the name, description, price, and buttons-->
 			<img src="../Pictures/Boy8-min.jpg" alt="Long sleeve" class="item-img">
@@ -342,19 +369,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-			     <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"> <!--Twelfth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"> <!--Twelfth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl8-min.jpg" alt="jacket and pants" class="item-img">
 			<div class="Kids-info">
 				<h3>Mini</h3>
@@ -367,19 +396,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Thirteenth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"><!--Thirteenth image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy9-min2.jpg" alt="Short sleeve" class="item-img">
 			<div class="Kids-info">
 				<h3>Short sleeve</h3>
@@ -392,20 +423,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-
-		<div class="Kids"><!--Fourteenth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Fourteenth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl9-min2.jpg" alt="Gown" class="item-img">
 			<div class="Kids-info">
 				<h3>Gown</h3>
@@ -418,20 +450,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-				 <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-
-		<div class="Kids"> <!--Fifteenth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"> <!--Fifteenth image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boys-min2.jpg" alt="Classic" class="item-img">
 			<div class="Kids-info">
 				<h3>Classic</h3>
@@ -444,19 +477,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-			     <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Sixteenth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Sixteenth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl10-min2.jpg" alt="top with leather pants" class="item-img">
 			<div class="Kids-info">
 				<h3>Top</h3>
@@ -469,19 +504,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-		         <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Seventeenth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"><!--Seventeenth image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/Boy1-min-min.jpg" alt="top with leather pants" class="item-img">
 			<div class="Kids-info">
 				<h3>Top</h3>
@@ -494,19 +531,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-		         <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Eighteenth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Eighteenth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/girls-min2.jpg" alt="long sleeve top" class="item-img">
 			<div class="Kids-info">
 				<h3>long Top</h3>
@@ -519,19 +558,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-		         <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Nineteenth image of a Girl, the name, description, price, and buttons-->
+		<div class="Kids"><!--Nineteenth image of a Girl, the name, description and buttons-->
 			<img src="../Pictures/Girl6-min-min.jpg" alt="Gown" class="item-img">
 			<div class="Kids-info">
 				<h3>Gown</h3>
@@ -544,19 +585,21 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button><!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-		         <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
-		</div>
 		</div>
 
-		<div class="Kids"><!--Twentieth image of a Boy, the name, description, price, and buttons-->
+		<div class="Kids"><!--Twentieth image of a Boy, the name, description and buttons-->
 			<img src="../Pictures/DBoyS-min.jpg" alt="D boys" class="item-img">
 			<div class="Kids-info">
 				<h3>D boys</h3>
@@ -569,16 +612,18 @@
 					<i class="fas fa-star"></i>
 					<i class="fas fa-star"></i>
 				</div>
-				<p class="price">Discount sale €80</p>
-				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<p class="price">Discount sale €80</p><!--the amount-->
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a><!--a cart icon-->
 				<div class="quantity-controls">
-					<button class="quantity-minus-button">-</button>
+					<button class="quantity-minus-button">-</button><!-- the button wih - sign-->
 					<input class="cart-input" type="number" value="" min="0">
-					<button class="quantity-plus-button">+</button>
+					<button class="quantity-plus-button">+</button> <!-- the button with + sign-->
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More
+					info</button><!--A buttton that links to the conactus page-->
 			</div>
-			     <button class="information" type="button" > Purchase</button>
-		         <button class="add-to-cart-btn" type="button" onclick="window.location.href='../Contactus/contactus.html'">More info</button>
-		</div>
 		</div>
 	</section>
 
@@ -588,14 +633,14 @@
 			<h4>Sign up for our newsletter</h4>
 			<p>Get updates on <span>offers</span> and keep up with our collections.</p>
 		</div>
-		
+
 		<div class="homeform">
 			<input type="text" placeholder="Email Address">
 			<button class="basic">Sign Up</button>
 		</div>
 	</section>
 
-     <!--The section footer-->
+	<!--The section footer-->
 	<footer class="section-p1">
 		<div class="p1">
 
@@ -624,7 +669,7 @@
 			<a href="../pages/Men.html">Men</a><!--A link to the men page-->
 			<a href="../pages/Women.html">Women</a><!--A link to the Women page-->
 			<a href="../pages/Native.html">Native</a><!--A link to the Native pages-->
-			<a href="../pages/children.html">Kids</a><!--A link to the Kids pages-->
+			<a href="../pages/Kids.html">Kids</a><!--A link to the Kids pages-->
 			<a href="../pages/contactus.html">Contact Us</a><!--A link to the Contactus pages-->
 		</div>
 
@@ -637,23 +682,27 @@
 
 		<div class="homepagespay">
 			<h4>Payment Options</h4>
-			<p>Secured Payment Gateways</p><!-- The payment options icons -->
-
+			<!-- The payment options icons -->
+			<p>Secured Payment Gateways</p>
 			<div class="footrow">
-				<img src="../Pictures/electronic-payments-2570939_640.jpg" alt="visa"><!--an image for the visa payment-->
+				<img src="../Pictures/electronic-payments-2570939_640.jpg"
+					alt="visa"><!--an image for the visa payment-->
 				<img src="../Pictures/master-card-2962135_640.png" alt="mastercard"><!--an for the mastercard payment-->
-				<img src="../Pictures/credit-6598773_640.png" alt="American Express"><!--an image for yjr American express payment-->
-			</div>	
+				<img src="../Pictures/credit-6598773_640.png"
+					alt="American Express"><!--an image for yjr American express payment-->
+			</div>
 		</div>
 
 		<div class="copyright"><!--copyright information-->
 			<p>Kuvira Fashion © 2024.
-			All Rights Reserved.</p>
+				All Rights Reserved.</p>
 		</div>
 
-	</footer>
-	
+	</footer><!-- footer closed-->
+
 	<!--Bootstrap-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
 </html>
