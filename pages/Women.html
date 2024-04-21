@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../CSS/Stylesheet.css" rel="stylesheet"><!-- Link to Stylesheet -->
+	<script src="../Javascript/store.js" defer></script> <!-- link to javascript-->
+	<script src="https://kit.fontawesome.com/99c191925e.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Google Fonts preconnect -->
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Kuvira-Women</title>
+</head>
+
+<body>
+	<!-- the header for section -->
+	<section id="header">
+
+		<a href="../index.html"><img id="logoimage" src="../Pictures/kuviralogo.png" alt="Logo top"></a><!-- Inserting the logo-->
+
+		<!-- the navigation for menu -->
+		<div>
+			<ul class="navbar " id="navbar1">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../pages/Men.html">Men</a></li>
+				<li><a href="../pages/Women.html">Women</a></li>
+				<li><a href="../pages/Kids.html">Kids</a></li>
+				<li><a href="../pages/Native.html">Native</a></li>
+				<li><a href="../pages/contactus.html">Contact</a></li>
+			</ul>
+		</div>
+
+		<!-- the navigation for the mobile  menu -->
+		<div id="mobile">
+			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i id="bar"
+					class="fa fa-outdent"></i></button>
+
+
+			<div class=" offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+				aria-labelledby="offcanvasWithBothOptionsLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">KUVIRA FASHION LINE</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+				</div>
+				<div class="offcanvas-body">
+
+					<!-- the logo for the mobile view -->
+					<a href="../index.html"><img id="logo" src="../Pictures/logo.png" alt="Logo"></a><!-- Inserting the logo-->
+
+					<!-- the navigation menu for the mobile view -->
+					<ul class=" navbar navbar2">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../pages/Men.html">Men</a></li>
+						<li><a href="../pages/Women.html">Women</a></li>
+						<li><a href="../pages/children.html">Kids</a></li>
+						<li><a href="../pages/Native.html">Native</a></li>
+						<li><a href="../pages/contactus.html">Contact</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<!-- this section for Women's page -->
+	<section class="WomenPage">
+		<div class="text-content">
+			<h3>Great Shopping Experience for Women</h3>
+			<h4>Super Value Deals</h4>
+			<h5>On all items</h5>
+			<p>Save more with deals of upto 60% off.</p>
+		</div>
+		<button type="button">Shop Now</button>
+	</section>
+
+	<!--this section to displaying women's dresses-->
+	<div class="WomenDress">
+		<h5> Women's Dress </h5>
+	</div>
+	<br>
+	<section class="Women-container">
+		<!-- First items with image of a woman, name, description, price, and buttons -->
+		<div class="Women">
+			<img src="../Pictures/woman1-min.jpg" alt="Jean Shirt" class="item-img">
+			<div class="Women-info">
+				<h3>Jean Shirt</h3>
+				<h4>Indigo Classic Denim Shirt</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button">Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+       
+		<!--Second image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman2-min.jpg" alt="Dress" class="item-img">
+			<div class="Women-info">
+				<h3>Pink Dress</h3>
+				<h4>Pink Ruffle Elegance</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+         <!--Third image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman3-min-min.jpg" alt="Suit" class="item-img">
+			<div class="Women-info">
+				<h3>Suit</h3>
+				<h4>Butter cream</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+        
+		 <!--Fourth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman4-min-min.jpg" alt="Suit" class="item-img">
+			<div class="Women-info">
+				<h3>Suit</h3>
+				<h4>light Blue</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+        <!--Fifth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman5-min-min.jpg" alt="Suit" class="item-img">
+			<div class="Women-info">
+				<h3>Suit</h3>
+				<h4>Creamy Classic</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button>
+			</div>
+		</div>
+        
+		<!--Sixth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman6-min-min.jpg" alt="Shirt" class="item-img">
+			<div class="Women-info">
+				<h3>Vintage Shirt</h3>
+				<h4>Vintage Shirt</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+        
+		<!--Seventh image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman7-min-min.jpg" alt="Jean Jacket" class="item-img">
+			<div class="Women-info">
+				<h3>Jean Jacket</h3>
+				<h4>Onyx Denim Jacket</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+            <!--Eighth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman8-min-min.jpg" alt="Gown" class="item-img">
+			<div class="Women-info">
+				<h3>Yellow Gown</h3>
+				<h4>Golden Charm</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+
+       <!--Ninth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman10-min-min.jpg" alt="Track" class="item-img">
+			<div class="Women-info">
+				<h3>Jean Track</h3>
+				<h4>Jean Fusion Outfit</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+		 <!--Tenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman11-min-min.jpg" alt="Gown" class="item-img">
+			<div class="Women-info">
+				<h3>Wine colour Gown</h3>
+				<h4>Beautiful Dinner Gown</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+        <!--Eleventh image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman12-min-min.jpg" alt="Wedding Dress" class="item-img">
+			<div class="Women-info">
+				<h3>Wedding Dress</h3>
+				<h4>Drop down Elegance Dress</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+         <!--Twelfth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman14-min-min.jpg" alt="Coat" class="item-img">
+			<div class="Women-info">
+				<h3>Coat</h3>
+				<h4>Midnight Mirage Coat</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+       <!--Thirteenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman15-min-min.jpg" alt="Dress" class="item-img">
+			<div class="Women-info">
+				<h3>Purple Dress</h3>
+				<h4>Royal Plum Elegance Dress</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+
+        <!--Fourteenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman16-min-min-min.jpg" alt="Suit" class="item-img">
+			<div class="Women-info">
+				<h3>Pink Suit</h3>
+				<h4>Blush Executive Ensemble</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+         
+		<!--Fifteenth image of a woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman17-min-min.jpg" alt="Classic" class="item-img">
+			<div class="Women-info">
+				<h3>Classic</h3>
+				<h4>Creaamy Classic</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+        <!--Sixteenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman18-min-min.jpg" alt="Shirt" class="item-img">
+			<div class="Women-info">
+				<h3>Cream</h3>
+				<h4>Cream Shirt</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+        
+		<!--Seventeenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman19-min-min.jpg" alt="Suit" class="item-img">
+			<div class="Women-info">
+				<h3>Red Suit</h3>
+				<h4>Cherry Blaze</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+        
+		<!--Eighteenth image of a woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/woman20-min-min.jpg" alt="shirt" class="item-img">
+			<div class="Women-info">
+				<h3>half T shirt</h3>
+				<h4>Creamy lowe shirt</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+		<!--Nineteenth image of a Woman, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/womenn-min.jpg" alt="Skirts" class="item-img">
+			<div class="Women-info">
+				<h3>Skirts</h3>
+				<h4>Pattern Skirts</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+
+        <!--Twentieth image of a Boy, the name, description, price, and buttons-->
+		<div class="Women">
+			<img src="../Pictures/womennnn-min.jpg" alt="Sweater" class="item-img">
+			<div class="Women-info">
+				<h3>Sweater</h3>
+				<h4>Creamy Sweater</h4>
+				<div class="Women-stars">
+					<!--This is a star icon-->
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<p class="price">Discount sale €80</p>
+				<a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+				<div class="quantity-controls">
+					<button class="quantity-minus-button">-</button>
+					<input class="cart-input" type="number" value="" min="0">
+					<button class="quantity-plus-button">+</button>
+				</div>
+				<button class="information" type="button"> Purchase</button>
+				<button class="add-to-cart-btn" type="button"
+					onclick="window.location.href='../Contactus/contactus.html'">More info</button><!--A buttton that links to the conactus page-->
+			</div>
+		</div>
+	</section>
+
+	<!--The section newsletter  -->
+	<section id="newsletter">
+		<div class="newstext">
+			<h4>Sign up for our newsletter</h4>
+			<p>Get updates on <span>offers</span> and keep up with our collections.</p>
+		</div>
+
+		<div class="homeform">
+			<input type="text" placeholder="Email Address">
+			<button class="basic">Sign Up</button>
+		</div>
+	</section>
+
+	<!--The section footer-->
+	<footer class="section-p1">
+		<div class="p1">
+			<img id="logothird" src="../Pictures/logoedit.png" alt="logo's image"><!--logo image-->
+			<h4>Contact</h4>
+			<p><strong>Address</strong>:1234Nairobi</p><!--Address information-->
+			<p><strong>Phone</strong>023454556767</p><!--Phone no-->
+			<p><strong>Hours</strong>9:00-21:00,Mon-Sun</p><!--Working hours-->
+
+			<div class="socials">
+				<h4>Find us on Socials</h4>
+				<!--the icon for all the social medias-->
+				<div class="icons">
+					<i class="fa fa-facebook-official"></i><!--An icon for Facebook-->
+					<i class="fa fa-instagram"></i><!--An icon for Instagram-->
+					<i class="fa fa-twitter"></i><!--An icon for Twitter-->
+					<i class="fa fa-youtube"></i><!--An icon for Youtube-->
+				</div>
+			</div>
+		</div>
+
+		<div class="p1">
+			<h4>Useful Links</h4>
+			<!--The other useful links for the pages-->
+			<a href="../index.html">Home</a><!--A link to the home page-->
+			<a href="../pages/Men.html">Men</a><!--A link to the men page-->
+			<a href="../pages/Women.html">Women</a><!--A link to the Women page-->
+			<a href="../pages/Native.html">Native</a><!--A link to the Native page-->
+			<a href="../pages/Kids.html">Kids</a><!--A link to the Kids page-->
+			<a href="../pages/contactus.html">Contact Us</a><!--A link to the Contactus page-->
+		</div>
+
+		<div class="p1">
+			<h4>My Account</h4>
+			<a onclick="showMessage()" href="#">Sign In</a>
+			<a href="../pages/contactus.html">Help</a><!--A link to the Contactus pages for help-->
+			<a href="../pages/contactus.html">Report A problem</a><!--A link to the Contactus pages for problem-->
+		</div>
+
+		<div class="homepagespay">
+			<h4>Payment Options</h4>
+			<!--The payment options icons -->
+
+			<p>Secured Payment Gateways</p>
+			<div class="footrow">
+				<img src="../Pictures/electronic-payments-2570939_640.jpg" alt="visa"><!--an image for the visa payment-->
+				<img src="../Pictures/master-card-2962135_640.png" alt="mastercard"><!--an for the mastercard payment-->
+				<img src="../Pictures/credit-6598773_640.png" alt="American Express"><!--an image for yjr American express payment-->
+			</div>
+		</div>
+
+		<div class="copyright"><!--copyright information-->
+			<p>Kuvira Fashion © 2024.
+				All Rights Reserved.</p>
+		</div>
+
+	</footer>
+
+	<!--Bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
