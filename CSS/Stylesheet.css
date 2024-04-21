@@ -817,6 +817,7 @@ form::before{
     margin: 0 10px 10px 10px;
     box-sizing: border-box;
     color: #0c0c0c;
+    margin-bottom: 20px;
 }
 
 .product img {
@@ -1120,17 +1121,16 @@ form::before{
 #gamelayer {
     border: 6px solid;
     border-color: #0056b3;
+    width: 500px;
+    height: 500px;;
+   
+   
 }
 
-#gamelayer{
-    width:500px;
-    height:500px;
-}
 #scoretext {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
+    font-size: 30x;
 }
-
 
 #resetbutton {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
