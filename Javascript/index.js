@@ -1,4 +1,6 @@
-/* Snake game for the group by Tope*/
+
+
+
 
 // Selecting the canvas element and its context
 const gamelayer = document.querySelector("#gamelayer");
@@ -181,6 +183,7 @@ function resetGame() {
     ];
     gamestart();
 }
+
 
 /*Work by Sylvia*/
 /*Making the outdent icon on the media tag clickable to show the navigation bar*/
