@@ -1,7 +1,3 @@
-
-
-
-
 // Selecting the canvas element and its context
 const gamelayer = document.querySelector("#gamelayer");
 const ctx = gamelayer.getContext("2d");
