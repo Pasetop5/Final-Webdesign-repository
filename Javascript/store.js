@@ -64,7 +64,7 @@ productImages.forEach(image => {
 
 
 
-/*Javascript for Contact form by Syvlia*/
+/*Javascript for Contact form by Sylvia*/
 
 
 // Get references to form elements
