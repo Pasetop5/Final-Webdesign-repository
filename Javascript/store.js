@@ -29,20 +29,6 @@ productImages.forEach(image => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* JavaScript for Women and Kid's Pages Work by Chris Balarabe Oghumah 23251051 */
 (function() {
     // For all elements with the class "more-info-btn" (all "Purchase" buttons)
@@ -71,3 +57,10 @@ productImages.forEach(image => {
         image.addEventListener('click', productImageHandler);
     });
 })();
+
+/*Work by Sylvia*/
+/*An alert box linked to the sign in button at the fotter*/
+function showMessage() {
+    alert("This feature is currently unavailable");
+
+}
