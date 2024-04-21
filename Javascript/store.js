@@ -29,7 +29,7 @@ productImages.forEach(image => {
 
 
 
-/* JavaScript for Women and Kid's Page by Chris */
+/* JavaScript for Women and Kid's Pages Work by Chris Balarabe Oghumah 23251051 */
 (function() {
     // For all elements with the class "more-info-btn" (all "Purchase" buttons)
     const purchaseButtons = document.querySelectorAll('.information');

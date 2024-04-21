@@ -199,3 +199,102 @@ if (close){
         nav.classList.remove('active');
     })
 }
+
+
+const form = document.getElementById('form');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const call = document.getElementById('call');
+const phonetext = document.getElementById('phonetext');
+const oemail = document.getElementById('oemail');
+const comments = document.getElementById('comments');
+const terms = document.getElementById('terms');
+const promotion = document.getElementById('promotion');
+const consultSelect = document.getElementById('consultSelect'); // Added
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const chatbox = element.parentElement;
+    const errorDisplay = chatbox.querySelector('.error');
+    errorDisplay.innerText = message;
+    chatbox.classList.add('error');
+    chatbox.classList.remove('success');
+}
+
+const setSuccess = element => {
+    const chatbox = element.parentElement;
+    const errorDisplay = chatbox.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    chatbox.classList.add('success');
+    chatbox.classList.remove('error');
+};
+
+const validateInputs = () => {
+    const firstnameValue = firstname.value.trim();
+    const lastnameValue = lastname.value.trim();
+    const phoneValue = phone.value.trim();
+    const emailValue = email.value.trim();
+    const callValue = call.checked; // Modified
+    const phonetextValue = phonetext.checked; // Modified
+    const oemailValue = oemail.checked; // Modified
+    const commentsValue = comments.value.trim();
+    const termsValue = terms.checked;
+    const promotionValue = promotion.checked;
+    const consultSelectValue = consultSelect.value; // Added
+
+    if (firstnameValue === '') {
+        setError(firstname, 'First name is required');
+    } else {
+        setSuccess(firstname);
+    }
+
+    if (lastnameValue === '') {
+        setError(lastname, 'Last name is required');
+    } else {
+        setSuccess(lastname);
+    }
+
+    if (emailValue === '') {
+        setError(email, 'Email is required');
+    } else {
+        setSuccess(email);
+    }
+
+    if (!callValue && !phonetextValue && !oemailValue) { // Modified
+        setError(call, 'Select at least one contact method');
+    } else {
+        setSuccess(call);
+    }
+
+    if (consultSelectValue === '') { // Added
+        setError(consultSelect, 'Please select a consult option');
+    } else {
+        setSuccess(consultSelect);
+    }
+
+    if (!termsValue) {
+        setError(terms, 'Agree to proceed');
+    } else {
+        setSuccess(terms);
+    }
+}
+
+form.addEventListener('submit', e => {
+    e.preventDefault();  // Prevent the default form submission
+    validateInputs();    // Call your validation function
+
+    // Check if the form is valid
+    if (form.checkValidity()) {
+        // Optionally, you could use a short delay or transition here
+        setTimeout(() => {
+            window.location.href = '../Game/game.html';  // Redirect to your game
+        }, 1000);  // Redirect after 1 second
+    }
+});
