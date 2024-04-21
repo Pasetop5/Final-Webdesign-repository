@@ -674,7 +674,7 @@ form::before{
     }
 
     h1{
-       font: size 36px; 
+       font-size: 36px; 
     }
     h2{
        font-size: 30px; 
@@ -932,9 +932,9 @@ form::before{
 .add-to-cart-btn,
 .more-info-btn {
     padding: 2px 5px; /* for adjusting the padding padding to control button size */
-    margin-top: 5px; /* Add margin to separate buttons from other content */
-    border: 1px solid #ceaf23; /* Add a border with  an put color on it*/
-    border-radius: 4px; /* Add border radius for a litle rectangle that has circular edges */
+    margin-top: 5px; /* to margin to separate buttons from other content */
+    border: 1px solid #ceaf23; /*to add a border with  an put color on it*/
+    border-radius: 4px; /* add border radius for a litle rectangle that has circular edges */
     background-color: #ae911d; /* Set background color*/
     color: #fff; /* Set text color to white */
     cursor: pointer; 
@@ -1121,15 +1121,14 @@ form::before{
 #gamelayer {
     border: 6px solid;
     border-color: #0056b3;
-    width: 500px;
-    height: 500px;;
-   
-   
+    width:500px; 
+    height:500px;
+  
 }
 
 #scoretext {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30x;
+    font-size: 30px;
 }
 
 #resetbutton {
