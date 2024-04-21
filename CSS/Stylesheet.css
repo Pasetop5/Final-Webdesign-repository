@@ -38,7 +38,7 @@ p{
 }
 .section-m1{
     margin: 30px 0;
-}*/
+}
 body{
     width: 100%;
 }
@@ -125,7 +125,7 @@ button.clear{
     font-size: 16px;
     font-weight: 600;
     color: aliceblue;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 /*Adding hovering effect to the navigation links and highlight the current page while on it*/
 .navbar li a:hover{
@@ -184,7 +184,7 @@ button.clear{
     background-color: transparent;
     color:darkslategrey;
     border:0;
-    padding-top: 10px 80px 10px 40px;
+    padding: 10px 80px 10px 40px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 600;
@@ -584,7 +584,7 @@ form::before{
         top: 0;
         right: 0px;
         height: 100vh;
-        width: -300px;
+        width: 0;
         background-color: #222;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
@@ -674,7 +674,7 @@ form::before{
     }
 
     h1{
-       font: size 36px; ; 
+       font: size 36px; 
     }
     h2{
        font-size: 30px; 
@@ -756,7 +756,7 @@ form::before{
     border-radius: 10px;
     margin-bottom: 20px;
     font-family: "Mulish", sans-serif;
-    font-optical-sizing: auto;    
+    font-size: 16px;    
     font-style: normal;
   }
   
