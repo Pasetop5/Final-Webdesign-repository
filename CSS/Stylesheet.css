@@ -674,7 +674,7 @@ form::before{
     }
 
     h1{
-       font: size 36px; 
+       font-size: 36px; 
     }
     h2{
        font-size: 30px; 
@@ -1128,7 +1128,7 @@ form::before{
 
 #scoretext {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30x;
+    font-size: 30px;
 }
 
 #resetbutton {
