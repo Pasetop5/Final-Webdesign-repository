@@ -1,4 +1,4 @@
-/* Javascript for Product and Men's Page by Tope */
+/* Javascript for Product and Men's Page by Temitope Pase */
 
 // for all elements with the class "more-info-btn" (all "Purchase" buttons)
 const purchaseButtons = document.querySelectorAll('.more-info-btn');
@@ -26,16 +26,6 @@ function productImageHandler() {
 productImages.forEach(image => {
     image.addEventListener('click', productImageHandler);
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -71,3 +61,110 @@ productImages.forEach(image => {
         image.addEventListener('click', productImageHandler);
     });
 })();
+
+
+
+/*Javascript for Contact form by Syvlia*/
+
+
+// Get references to form elements
+const form = document.getElementById('form');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const call = document.getElementById('call');
+const phonetext = document.getElementById('phonetext');
+const oemail = document.getElementById('oemail');
+const comments = document.getElementById('comments');
+const terms = document.getElementById('terms');
+const promotion = document.getElementById('promotion');
+const consultSelect = document.getElementById('consultSelect');
+
+// Add submit event listener to the form
+form.addEventListener('submit', e => {
+    e.preventDefault(); // Prevent form submission
+    validateInputs(); // Call the validation function
+});
+
+// Function to set error message for an element
+const setError = (element, message) => {
+    const chatbox = element.parentElement;
+    const errorDisplay = chatbox.querySelector('.error');
+    errorDisplay.innerText = message;
+    chatbox.classList.add('error'); // Apply error styling
+    chatbox.classList.remove('success'); // Remove success styling
+}
+
+// Function to set success styling for an element
+const setSuccess = element => {
+    const chatbox = element.parentElement;
+    const errorDisplay = chatbox.querySelector('.error');
+    errorDisplay.innerText = ''; // Clear error message
+    chatbox.classList.add('success'); // Apply success styling
+    chatbox.classList.remove('error'); // Remove error styling
+};
+
+// Function to validate form inputs
+const validateInputs = () => {
+    // Retrieve values of form inputs
+    const firstnameValue = firstname.value.trim();
+    const lastnameValue = lastname.value.trim();
+    const phoneValue = phone.value.trim();
+    const emailValue = email.value.trim();
+    const callValue = call.checked;
+    const phonetextValue = phonetext.checked;
+    const oemailValue = oemail.checked;
+    const commentsValue = comments.value.trim();
+    const termsValue = terms.checked;
+    const consultSelectValue = consultSelect.value;
+
+    // Validate first name
+    if (firstnameValue === '') {
+        setError(firstname, 'First name is required');
+    } else {
+        setSuccess(firstname);
+    }
+
+    // Validate last name
+    if (lastnameValue === '') {
+        setError(lastname, 'Last name is required');
+    } else {
+        setSuccess(lastname);
+    }
+
+    // Validate phone number
+    if (phoneValue.length !== 10 || isNaN(phoneValue)) {
+        setError(phone, 'Phone number must be 10 digits');
+    } else {
+        setSuccess(phone);
+    }
+
+    // Validate email
+    if (emailValue === '') {
+        setError(email, 'Email is required');
+    } else {
+        setSuccess(email);
+    }
+
+    // Validate contact method
+    if (!callValue && !phonetextValue && !oemailValue) {
+        setError(call.parentElement, 'Select at least one contact method');
+    } else {
+        setSuccess(call.parentElement);
+    }
+
+    // Validate consultation option
+    if (consultSelectValue === '') {
+        setError(consultSelect, 'Please select a consult option');
+    } else {
+        setSuccess(consultSelect);
+    }
+
+    // Validate terms agreement
+    if (!termsValue) {
+        setError(terms.parentElement, 'Agree to the terms and conditions');
+    } else {
+        setSuccess(terms.parentElement);
+    }
+};
